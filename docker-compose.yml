@@ -10,11 +10,9 @@ services:
   database:
     image: postgres
     container_name: kodapet-db
-
     environment:
       POSTGRES_PASSWORD: admin
       POSTGRES_USER: admin
       POSTGRES_DB: kodapet
-
     ports:
       - "5432:5432"
