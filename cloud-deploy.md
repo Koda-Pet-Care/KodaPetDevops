@@ -20,3 +20,13 @@ GitHub → Pipeline CI/CD → Docker Build → Azure VM → Aplicação
 - Padronização
 - Facilidade de deploy
 - Infraestrutura moderna
+
+## Evidência de Execução em Cloud
+
+A aplicação foi implantada em uma máquina virtual Linux na Microsoft Azure.  
+A VM foi acessada via SSH, o repositório foi clonado do GitHub e os serviços foram executados utilizando Docker Compose.
+
+Comando utilizado:
+
+```bash
+docker compose up -d
