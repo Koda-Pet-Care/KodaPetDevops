@@ -1,65 +1,84 @@
 # KodaPet DevOps
 
-Projeto DevOps da plataforma KodaPet desenvolvido para automação de infraestrutura, integração contínua e containerização da aplicação.
+Projeto desenvolvido para a disciplina **DevOps Tools & Cloud Computing**, com foco na aplicação de práticas DevOps na plataforma **KodaPet**, uma solução voltada ao acompanhamento preventivo e contínuo da saúde de pets.
+
+O objetivo deste repositório é demonstrar a estrutura de infraestrutura, containerização, versionamento, pipeline CI/CD e deploy em ambiente cloud utilizando **Docker**, **Docker Compose**, **GitHub Actions** e **Microsoft Azure**.
 
 ---
 
-## Tecnologias Utilizadas
+##  Sobre o Projeto
 
-- Docker
-- Docker Compose
-- PostgreSQL
-- GitHub Actions
-- Java 17
-- Spring Boot
-- Git/GitHub
+A plataforma KodaPet tem como proposta conectar tutores, clínicas veterinárias e dados de saúde dos pets em um ecossistema digital preventivo.
 
----
+Na parte de DevOps, o foco foi estruturar um ambiente capaz de:
 
-## Estrutura do Projeto
-
-O ambiente foi desenvolvido utilizando containers Docker para padronização e facilidade de deploy.
-
-A automação CI/CD foi implementada utilizando GitHub Actions.
+- padronizar a execução da aplicação;
+- containerizar os serviços;
+- executar banco de dados em container;
+- automatizar build com pipeline CI/CD;
+- versionar o projeto no GitHub;
+- realizar execução em ambiente cloud com Azure VM.
 
 ---
 
-## Serviços
+##  Objetivo da Entrega DevOps
 
-### Aplicação
-- Spring Boot API
-- Porta 8080
+Aplicar práticas DevOps modernas para preparar a aplicação para execução em ambiente padronizado, escalável e automatizado.
 
-### Banco de Dados
-- PostgreSQL
-- Porta 5432
+Principais objetivos:
 
----
-
-## Pipeline CI/CD
-
-A pipeline automatiza:
-- Build da aplicação
-- Validação da estrutura
-- Containerização Docker
+- Criar um ambiente com Docker;
+- Utilizar Docker Compose para orquestração;
+- Executar banco PostgreSQL em container;
+- Configurar pipeline CI/CD com GitHub Actions;
+- Utilizar GitHub para versionamento;
+- Criar uma VM Linux na Azure;
+- Clonar o repositório na VM;
+- Executar os containers em ambiente cloud.
 
 ---
 
-## Docker Compose
+##  Tecnologias Utilizadas
 
-O Docker Compose realiza a orquestração dos serviços:
-- Aplicação
-- Banco PostgreSQL
+| Tecnologia | Finalidade |
+|---|---|
+| Docker | Containerização da aplicação |
+| Docker Compose | Orquestração dos containers |
+| PostgreSQL | Banco de dados containerizado |
+| Git | Controle de versão local |
+| GitHub | Repositório remoto e colaboração |
+| GitHub Actions | Pipeline CI/CD |
+| Microsoft Azure | Ambiente cloud |
+| Ubuntu Server | Sistema operacional da VM |
+| Java 17 | Ambiente base da aplicação |
+| Spring Boot | API planejada da solução |
 
 ---
 
-## Arquitetura Cloud
-
-A solução foi planejada para execução em ambiente cloud utilizando Microsoft Azure Virtual Machines.
-
----
-
-## Execução Local
+##  Estrutura do Repositório
 
 ```bash
-docker compose up
+KodaPetDevops/
+│
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+│
+├── target/
+│   └── app.jar
+│
+├── Dockerfile
+├── docker-compose.yml
+├── cloud-deploy.md
+├── README.md
+└── .gitignore
+
+---
+
+## Desenvolvido por:
+Evellyn Barbosa Ferreira - Rm562744
+Henrique Sinkevicius Maran - Rm562977
+Maicon Douglas da Silva Timoteo - RM561279 
+
+## Link do youtube:
+
