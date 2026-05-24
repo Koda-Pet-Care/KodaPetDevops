@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: kodapet-app
+    ports:
+      - "8080:8080"
+
+  database:
+    image: postgres
+    container_name: kodapet-db
+
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: kodapet
+
+    ports:
+      - "5432:5432"
